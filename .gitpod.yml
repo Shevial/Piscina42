@@ -8,8 +8,8 @@ vscode:
   extensions:
     - ms-vscode.cpptools
 
-github:
-  prebuilds:
-    master:
-      addCheck: true
-      init: "echo 'Prebuild todo listo'"
+#github:
+ # prebuilds:
+  #  master:
+   #   addCheck: true
+    #  init: "echo 'Prebuild todo listo'"
