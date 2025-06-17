@@ -18,9 +18,3 @@ void ft_print_alphabet(void){
 	 char newline = '\n';
  	 write(1, &newline, 1);
 }
-
-int main(void)
-{
-    ft_print_alphabet();
-    return 0;
-}

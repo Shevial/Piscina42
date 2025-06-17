@@ -1,0 +1,11 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Inicialización
+    init: sudo apt update && sudo apt install build-essential -y
+    command: echo "Lista la terminal para compilar"
+
+vscode:
+  extensions:
+    - ms-vscode.cpptools
