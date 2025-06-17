@@ -14,5 +14,10 @@ void ft_print_reverse_ascii_alphabet(void){
          char newline = '\n';
          write(1, &newline, 1);
 }
+int main(void)
+{
+    ft_print_reverse_ascii_alphabet();
+    return 0;
+}
 
 
