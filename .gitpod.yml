@@ -12,4 +12,4 @@ github:
   prebuilds:
     master:
       addCheck: true
-      init: echo "Prebuild todo listo"
+      init: "echo 'Prebuild todo listo'"
