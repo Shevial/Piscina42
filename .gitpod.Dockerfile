@@ -1,4 +1,8 @@
-FROM gitpod/workspace-full
+FROM gitpod/workspace-full:latest
 
-# Instala herramientas necesarias para C
-RUN sudo apt update && sudo apt install -y build-essential
+USER root
+
+RUN sudo apt-get update && \
+    sudo apt-get install -y build-essential
+
+USER gitpod
