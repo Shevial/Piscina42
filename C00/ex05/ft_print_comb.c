@@ -9,21 +9,39 @@
 // Funciones permitidas:
 // write
 
-#include<unistd.h>
+#include <unistd.h>
 
-void ft_print_comb(void){
-	
-	int n = 0;
-	while(n <= 999){
-		write(1, "&n", 1);
-		n ++;
-
-	}
+void ft_putchar(char c) {
+    write(1, &c, 1);
 }
 
-int main (void){
+void ft_print_comb(void) {
+    char a = '0';
 
-	ft_print_comb();
-	return 0;
+    while (a <= '7') {
+        char b = a + 1;
+        while (b <= '8') {
+            char c = b + 1;
+            while (c <= '9') {
+                ft_putchar(a);
+                ft_putchar(b);
+                ft_putchar(c);
 
+                if (!(a == '7' && b == '8' && c == '9')) {
+                    write(1, ", ", 2);
+                }
+                c++;
+            }
+            b++;
+        }
+        a++;
+    }
 }
+
+int main(void) {
+    char newline = '\n';
+    ft_print_comb();
+    ft_putchar(newline);
+    return 0;
+}
+
